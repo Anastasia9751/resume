@@ -7,9 +7,13 @@
     <meta name="keywords" content="anastasia, cv, resume">
     <meta name="description" content="Это сайт - резюме Анастасии">
     <title>Anastasia Resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="avatar.jpg" width="200px" alt="Анастасия">
+ <div class="container">   
+  <div class="info">
+    <img src="avatar.jpg" alt="Анастасия" class="avatar">
+    <div class="info-text">
     <h1>Анастасия</h1>
     <p>Я <strong>студентка</strong>, моя цель - заняться <strong>фронтендом</strong>.</p>
     <p>Я люблю <em>читать</em>, интересуюсь <em>психологией</em>, <em>шью</em> и <em>учу языки</em>.</p>
@@ -17,21 +21,26 @@
     <a href="https://t.me/Hrflyi" target="_blank">Telegram</a>
     |
     <a href="https://vk.com/aorban" target="_blank">Vkontakte</a>
-    <h2>Мои хобби</h2>
-    <ol>
+    </div>
+    </div>
+    <div class="card bg-1">
+     <h2>Мои хобби</h2>
+      <ol class="list">
         <li>Шитье</li>
         <li>Чтение книг</li>
         <li>Путешествия</li>
-    </ol>
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
+      </ol>
+    </div>
+    <div class="card bg-2">
+     <h2>Опыт работы</h2>
+      <table class="table">
+        <!-- <thead>
             <tr>
                 <th>Название</th>
                 <th>Должность</th>
                 <th>Год</th>
             </tr>
-        </thead>
+        </thead> -->
         <tbody>
             <tr>
                 <td>Calling</td>
@@ -49,23 +58,32 @@
                 <td>2019-2022</td>
             </tr>
         </tbody>
-    </table>
-    <h2>Связаться со мной</h2>
-    <form>
-      <div>
+      </table>
+    </div>
+
+    <div class="card bg-3">
+
+    <form class="form">
+      <h2>Связаться со мной</h2>
+
+      <div class="form-row">
+      <div class="form-group">
         <label for="name">Ваше имя:</label>
         <input type="text" id="name" placeholder="Введите имя">
       </div>
-      <div>
+      <div class="form-group">
         <label for="email">Ваш email:</label>
         <input type="email" id="email" placeholder="Введите email">
       </div>
-      <div>
+    </div>
+    
+      <div class="form-group">
         <label for="message">Ваше сообщение:</label>
-        <br>
         <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
       </div>
-      <button type="submit">Отправить!</button>
+      <button type="submit" class="btn">Отправить!</button>
     </form>
+  </div>
+ </div> 
 </body>
 </html>
